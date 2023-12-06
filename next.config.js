@@ -1,16 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     env: {
-      API_URL: 'http://localhost:1337/api',
-        // API_URL: 'https://lemonpush.cf/cms/api',
-        DOMAIN_BACKEND: 'http://localhost:1337',
-        // DOMAIN_BACKEND: 'https://lemonpush.cf/cms',
+      // API_URL: 'http://localhost:1337/api',
+        API_URL: 'https://lemonpush.cf/cms/api',
+        // DOMAIN_BACKEND: 'http://localhost:1337',
+        DOMAIN_BACKEND: 'https://lemonpush.cf/cms',
         STRIPE_PUBLISHABLE_KEY:process.env.STRIPE_PUBLISHABLE_KEY,
         STRIPE_SECRECT_KEY:process.env.STRIPE_SECRECT_KEY
     },
     images: {
-        // domains: ['lemonpush.cf'],
-        domains: ['localhost'],
+        domains: ['lemonpush.cf'],
+        // domains: ['localhost'],
     },
     webpack: (config, { isServer }) => {
         config.module.rules.push({
