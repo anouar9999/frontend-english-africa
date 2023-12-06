@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --mainColor : #1B7343;
+  --secondColor: #F3C02F
+}
+.markdown > * {
+  all: revert;
+}
+.guZdik{
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 30px 20px !important;
+}
+.font-libre-caslon {
+  font-family: 'Libre Caslon Text', serif;
+}
+.banner{
+  background-image: url("/bg-banner.webp");
+  background-size: cover;
+}
+.why-choose .keys::after {
+  content: "";
+  background-color: currentColor;
+  height: 3px;
+  width: 40px;
+  bottom: 10%;
+  top: 80%;
+  right: 40%;
+  display: block;
+}
+.why-choose{
+  background-image: url("/bg-keys.webp");
+}
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.list-footer li::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--mainColor);
+  display: inline-block;
+}
+
+.timetable-container .time-line-card:nth-child(odd) .time-line-info:nth-child(odd),
+.timetable-container .time-line-card:nth-child(even) .time-line-info:nth-child(even) {
+  background-color: var(--mainColor);
+  color: white;
+}
+
+/* Footer */
+
+.image-footer:hover{
+  filter: grayscale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Why Choose Us */
+
+.bg-main-banner{
+  background-image: url("/our-mission/bg-banner.png");
+  background-size: cover;
+}
+
+.title-banner-page::after {
+  content: "";
+  display: block ;
+  width: 10%;
+  height: 5px;
+  background-color: var(--mainColor);
+  margin-top: 15px;
+
+}
+
+.our-mission-qoute p::before,
+.our-mission-qoute p::after {
+  background-image: url('/icons/quotes.svg');
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+  margin-right: 10px;
+  content:"";
+}
+
+.our-mission-qoute p::after {
+  margin-left: 10px;
+  transform: rotate(190deg);
+  content:"";
+}
+
+.text-relative{
+  transform: translate(-50%);
+}
+figcaption{
+  position: relative;
+}
+figcaption::after{
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: var(--mainColor);
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  transition: all 0.5s ease-in-out;
+}
+figcaption:hover{
+  color: #fff;
+}
+
+figcaption:hover::after {
+  height: 100%;
+  z-index: -11;
+}
+
+*{
+  /* border: 1px solid red !important; */
+}
+.filter-courses::before{
+  content: "";
+  width: 100%;
+  height: 4px;
+  display: block;
+  background-color: var(--mainColor);
+
+}
+
+
+.swiper-wrapper{
+  justify-content: center;
+}
+
+
+.scroll-to-top{
+  background-color: var(--mainColor) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-to-top svg{
+  fill: #FE9131;
+}
